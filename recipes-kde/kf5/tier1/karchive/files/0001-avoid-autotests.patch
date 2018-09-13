@@ -1,30 +1,25 @@
-From 39b270db699edb25293c49fe8904a810534c48b1 Mon Sep 17 00:00:00 2001
-From: =?UTF-8?q?Andreas=20M=C3=BCller?= <schnitzeltony@googlemail.com>
-Date: Wed, 16 Dec 2015 21:03:20 +0100
-Subject: [PATCH] avoid autotests
-MIME-Version: 1.0
-Content-Type: text/plain; charset=UTF-8
-Content-Transfer-Encoding: 8bit
+From d55188596488c92394723003f2de4cbe7064e1ef Mon Sep 17 00:00:00 2001
+From: Steinar Bakkemo <steinar.bakkemo@remarkable.no>
+Date: Thu, 13 Sep 2018 13:21:21 +0200
+Subject: [PATCH] avoid-autotests
 
-Upstream-Status: Inappropriate [configuration]
-
-Signed-off-by: Andreas Müller <schnitzeltony@googlemail.com>
 ---
- CMakeLists.txt | 1 -
- 1 file changed, 1 deletion(-)
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 0d1f96d..92eec98 100644
+index 108ec1e..7f557cb 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -58,7 +58,6 @@ ecm_setup_version(${KF5_VERSION}
+@@ -62,7 +62,7 @@ ecm_setup_version(PROJECT
      SOVERSION 5)
  
  add_subdirectory(src)
 -add_subdirectory(autotests)
++#add_subdirectory(autotests)
  add_subdirectory(tests)
  
  
 -- 
-2.5.0
+2.7.4
 
